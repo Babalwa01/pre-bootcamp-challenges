@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Preboot camp task 11 UI</title>
+</head>
+<body>
+    <h3>Insert 2 words to see their common characters:</h3>
+    <input id="string1" type="text" placeholder="Enter first word">
+    <br><br>
+    <input id="string2" type="text" placeholder="Enter second word">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="generateCharacters(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function generateCharacters() {
+            var str1 = document.getElementById("string1").value;
+            var str2 = document.getElementById("string2").value;
+ 
+            // convert the input strings to an array of lowercase characters and assigns them to a declared variable
+            var firstStr = str1.toLowerCase().split('');
+            var secStr = str2.toLowerCase().split('');
+            // declares an empty array
+            var strArray = [];
+
+            for (var i = 0; i < firstStr.length; i++) {
+                if (secStr.indexOf(firstStr[i]) >= 0) {
+                    strArray.push(firstStr[i]);
+                }
+            }
+            // prints the output of common characters
+            alert(strArray);  
+        }
+    </script>
+</body>
+</html>
