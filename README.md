@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 11 file -
+Prints out common characters in two strings
+
 Task 10 file - 
 Prints out all the vowels in the string.
 
