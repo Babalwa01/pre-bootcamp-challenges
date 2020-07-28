@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 7 file -
+Outputs temperature in Celsius and Fahrenheit
+
 Task 6 File -
 Outputs the maximum number out of three input numbers
 
