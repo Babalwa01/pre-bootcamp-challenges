@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Preboot camp task 4 UI</title>
+</head>
+<body>
+    <h3>Insert a word and click button to see its vowels:</h3>
+    <input id="string1" type="text" placeholder="Enter a word">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="generateVowels(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function generateVowels() {
+            var str = document.getElementById("string1").value;
+            
+            // declaration of variable assigned to a regular expression that defines only uppercase and lowercase vowels
+            var reg = /[aeiouAEIOU]/ig;
+            // creates an array of characters that match the above regex
+            var strArray = str.match(reg);
+            // prints the output of vowels
+            alert(strArray);
+        }
+    </script>
+</body>
+</html>
