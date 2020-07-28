@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 9 file -
+Prints out the sum of all the multiples of 3 or 5 that are below 1000.
+
 Task 8 file -
 Outputs the conversion of a number to hours and minutes.
 
