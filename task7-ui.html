@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Pre bootcamp task 7</title>
+</head>
+<body>
+    <h3>Convert temperature from Celsius to Fahrenheit</h3>
+    <input id="temp1" type="text" placeholder="Enter temperature">
+    <br><br>
+    <input class="btn" type="submit" value="Click to see answer" onclick="celsiusToFahrenheit(); return false">
+    <br><br>
+
+    <h3>Convert temperature from Fahrenheit to Celsius</h3>
+    <input id="temp2" type="text" placeholder="Enter temperature">
+    <br><br>
+    <input class="btn" type="submit" value="Click to see answer" onclick="fahrenheitToCelsius(); return false">
+    <br><br>
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+
+        function celsiusToFahrenheit () {
+            var num1 = document.getElementById("temp1").value;
+            var num1Int = parseInt(num1);
+
+            var fTemp = num1Int * (9 / 5) + 32;
+            alert("The temperature in Fahrenheit is: " + fTemp.toFixed(2) + " Fahrenheit.");
+        }
+
+        // function that converts Fahrenheit to Celsius
+        function fahrenheitToCelsius () {
+            var num2 = document.getElementById("temp2").value;
+            var num2Int = parseInt(num2);
+
+            var cTemp = (num2Int - 32) / (9 / 5);
+            alert("The temperature in Celsius is: " + cTemp.toFixed(2) + " Celsius.");
+        }
+    </script>
+</body>
+</html>
