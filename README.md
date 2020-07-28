@@ -1,6 +1,6 @@
 #pre-bootcamp-challenges
 
-Task 6 file -
+Task 6 File -
 Outputs the maximum number out of three input numbers
 
 Task 5 file -
