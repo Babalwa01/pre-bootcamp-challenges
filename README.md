@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 10 file - 
+Prints out all the vowels in the string.
+
 Task 9 file -
 Prints out the sum of all the multiples of 3 or 5 that are below 1000.
 
