@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Pre bootcamp task 6 UI</title>
+</head>
+<body>
+    <h3>Insert 3 numbers to get the maximum number:</h3>
+    <input id="number1" type="text" placeholder="Enter first number">
+    <br><br>
+    <input id="number2" type="text" placeholder="Enter second number">
+    <br><br>
+    <input id="number3" type="text" placeholder="Enter third number">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="calculateMaxNumber(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function calculateMaxNumber() {
+            var num1 = document.getElementById("number1").value;
+            var num2 = document.getElementById("number2").value;
+            var num3 = document.getElementById("number3").value;
+
+            var num1Int = parseInt(num1);
+            var num2Int = parseInt(num2);
+            var num3Int = parseInt(num3);
+
+            //declaration of maximum number variable 
+            var maxNumber;
+
+            // conditional statements comparing values of num1, num2 and num3
+            if (num1Int > num2Int && num1Int > num3Int) {
+                maxNumber = num1Int;
+            }
+            else if (num2Int > num1Int && num2Int > num3Int) {
+                maxNumber = num2Int;
+            }
+            else {
+                maxNumber = num3Int;
+            }
+    
+            alert("The maximum number is: " + maxNumber + ".");
+        }
+    </script>
+</body>
+</html>
