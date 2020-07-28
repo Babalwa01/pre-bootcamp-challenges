@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Pre bootcamp task 9 UI</title>
+</head>
+<body>
+    <h3>Click button to see the sum of all the multiples of 3 or 5 that are below 1000:</h3>
+    <br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="calculateSumMultiple(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function calculateSumMultiple(){
+            // variable declaration
+            var sum = 0;
+
+            // For loop to iterate from 0 to 999
+            for (var i = 0; i < 1000; i++) {
+
+                if (i % 3 === 0 || i % 5 === 0) {
+                sum += i;
+                }
+            }
+            alert("The sum is: " + sum);
+        }
+    </script>
+</body>
+</html>
