@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Pre bootcamp task 8 UI</title>
+</head>
+<body>
+    <h3>Task 8 - Enter any number to convert it to hours and minutes</h3>
+    <input id="anyNumber" type="text" placeholder="Enter number">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="convertTime(); return false">
+
+    <script>
+        // function that converts number to hours and minutes
+        function convertTime() {
+            var num = document.getElementById("anyNumber").value;
+            var numInt = parseInt(num);
+
+            var hours = Math.floor(numInt / 60);
+            var minutes = numInt % 60;
+        
+            var time = hours + " hour(s), " + minutes + " minute(s)"; 
+            alert(time);
+        }
+    </script>
+</body>
+</html>
