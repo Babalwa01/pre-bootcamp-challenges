@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 6 file -
+Outputs the maximum number out of three input numbers
+
 Task 5 file -
 Outputs the area of a triangle, calculated from  three user inputs.
 
