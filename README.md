@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 8 file -
+Outputs the conversion of a number to hours and minutes.
+
 Task 7 file -
 Outputs temperature in Celsius and Fahrenheit
 
