@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Preboot camp task 4 UI</title>
+</head>
+<body>
+    <h3>Insert 2 numbers to check true or false value:</h3>
+    <input id="number1" type="text" placeholder="Enter first number">
+    <br><br>
+    <input id="number2" type="text" placeholder="Enter second number">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="testThree(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function testThree() {
+            var num1 = document.getElementById("number1").value;
+            var num2 = document.getElementById("number2").value;
+
+            // converts sum of input to int and back to string 
+            var sumOfNumbers = parseInt(num1) + parseInt(num2);
+            var sumOfNumbersString = sumOfNumbers.toString();
+            
+            if((num1 == 3 || num2 == 3) && (sumOfNumbersString.search('3') !== -1)) {
+                alert("true");
+            }
+            else {
+                alert("false");
+            }
+        }
+    </script>
+</body>
+</html>
