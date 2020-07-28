@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Pre bootcamp Task 5 UI</title>
+</head>
+<body>
+    <h3>Insert the 3 lengths of a triangle to calculate area:</h3>
+    <input id="number1" type="text" placeholder="Enter first side">
+    <br><br>
+    <input id="number2" type="text" placeholder="Enter second side">
+    <br><br>
+    <input id="number3" type="text" placeholder="Enter third side">
+    <br><br>
+    <input id="btn" type="submit" value="Click to see answer" onclick="calculateArea(); return false">
+
+    <!-- JavaScript tag for conditional statements and declarations - for testing-->
+    <script>
+        function calculateArea() {
+            var num1 = document.getElementById("number1").value;
+            var num2 = document.getElementById("number2").value;
+            var num3 = document.getElementById("number3").value;
+
+            var num1Int = parseInt(num1);
+            var num2Int = parseInt(num2);
+            var num3Int = parseInt(num3);
+
+            var semiPerimeter = 0.5 * (num1Int + num2Int + num3Int);
+            var area = Math.sqrt(semiPerimeter * (semiPerimeter - num1Int) * (semiPerimeter - num2Int) * (semiPerimeter - num3Int)).toFixed(2);
+            
+            alert("Area is: " + area + " square-meters");
+        }
+    </script>
+</body>
+</html>
