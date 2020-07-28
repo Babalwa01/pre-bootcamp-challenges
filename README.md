@@ -1,5 +1,8 @@
 #pre-bootcamp-challenges
 
+Task 5 file -
+Outputs the area of a triangle, calculated from  three user inputs.
+
 Task 4 file -
 Tests 2 numbers and returns a true or false
 
